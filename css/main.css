@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=El+Messiri:wght@400..700&display=swap');
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-primario: #36012d;
+  --color-secundario: rgb(212, 105, 4);
+  --color-terciario: #fff;
+
+}
+body{
+  background-color: #742f69;
+  
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ li{
+  list-style: none;
+ }
+
+ header{
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.20rem;
+ }
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 3rem;
+  padding-block: .3rem; 
+  background: -webkit-linear-gradient(to right, #2f1b41, #734b6d); 
+  background: linear-gradient(to right, #251633, #742f69);
+  
+}
+ 
+.nav-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: var(--color-terciario);
+  
+}
+
+.img-1{
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.lista-ul{
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 1.5rem;
+  
+}
+ 
+
+.chill{
+  color: var(--color-terciario);
+  transition: .5s;
+  position: relative;
+}
+.chill:hover{
+  color: #ed66eb;
+}
+
+
+span{
+  position: absolute;
+  left: 0;
+  margin-top: 5px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-bottom: 2px solid #ed66eb;
+  border-radius: 15px;
+  opacity: 0;
+  transition: .5s;
+}
+
+span:hover{
+  transform: scale(1.5) ;
+  opacity: 1;
+  
+}
+ 
+.Inicio{
+  color: #ed66eb;
+  transform: scale(1.5) ;
+  opacity: 1;
+}
+
+
+
+/**************MAIN**************/
+
+.titulo-main{
+  font-family: "El Messiri", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 8rem;
+  
+}
+
+
+.text-main{
+  color: green;
+  font-size: 2rem;
+}
+.contenedor-main{
+  background-image: url(../img/img6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+  z-index: 1;
+}
+
+.div-style{
+  z-index: 1;
+}
+
+.div-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* padding-bottom: 6rem; */
+  color: var(--color-terciario);
+}
+
+.parrafo-main{
+  font-size: 2rem;
+}
+
+.div-tarjetas{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-top: -50px;
+  z-index: 2;
+}
+
+.img-tarjetas{
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+  z-index: 2;
+  border-radius: 6px;
+  transition: .5s;
+}
+
+
+.tarjetas{
+  width: 20rem;
+  box-shadow: 0px 20px 25px 15px
+  rgba(0,0,0,0.50);
+  background-color: #230423a8;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  
+}
+
+.capa{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #764d2654;
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.tarjetas:hover > .capa{
+  opacity: 1;
+  visibility: visible;
+}
+
+.tarjetas:hover > .capa .titulo-capa{
+  margin-top: 70px;
+  margin-bottom: 15px;
+
+}
+ .titulo-capa{
+  color: var(--color-terciario);
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+}
+
+.texto-capa{
+  color: var(--color-terciario);
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 2220px;
+  margin: sauto;
+}
+
+.tarjetas:hover > .img-tarjetas{
+  transform: scale(1.2);
+
+}
+.div-style2{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: white;
+}
+
+/****/
+
+.section-main-2{
+  margin-top: 6rem;
+}
+
+.contenedor-section{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+  height: 100%;
+  background-color: pink;
+  padding-top: 5rem;
+  padding-inline: 2rem;
+
+}
+
+.hero-2{
+  display: flex;
+}
+
+.contenedor-section-2{
+  width: 50%;
+  background-color: #ef82c0;
+}
+.img-section2{
+  
+  height: 20rem;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.titulo-section2{
+  font-family: "El Messiri", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.parrafo-section2{
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1rem;
+}
